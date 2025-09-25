@@ -8,7 +8,7 @@ const Users = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchUsers = async () => {
+    const getStaticProps = async () => {
       try {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         const data = await res.json();
@@ -34,7 +34,7 @@ const Users = () => {
       }
     };
 
-    fetchUsers();
+    getStaticProps();
   }, []);
 
   return (
