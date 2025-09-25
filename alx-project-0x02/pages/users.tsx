@@ -37,7 +37,6 @@ const Users: React.FC<UsersPageProps> = ({ users }) => {
 
 export default Users;
 
-// This runs at build time and passes users as props
 export async function getStaticProps() {
   try {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
