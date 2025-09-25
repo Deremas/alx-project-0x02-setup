@@ -7,7 +7,7 @@ const posts = () => {
   const [posts, setPosts] = useState<PostProps[]>([]);
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const getStaticProps = async () => {
       try {
         const response = await fetch(
           "https://jsonplaceholder.typicode.com/posts"
@@ -24,7 +24,7 @@ const posts = () => {
         console.error("Error fetching posts:", error);
       }
     };
-    fetchPosts();
+    getStaticProps();
   }, []);
 
   return (
