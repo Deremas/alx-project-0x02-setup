@@ -3,6 +3,7 @@ import PostModal from "@/components/common/PostModal";
 import Card from "@/components/common/Card";
 import { INITIAL_POSTS } from "@/constants";
 import { Post } from "@/interfaces";
+import Header from "@/components/layout/Header";
 
 const home = () => {
   const [posts, setPosts] = useState<Post[]>(INITIAL_POSTS);
@@ -14,6 +15,7 @@ const home = () => {
 
   return (
     <>
+    <Header/>
       <div className="p-8">
         <h1 className="text-3xl font-bold text-center">Home Page</h1>
 

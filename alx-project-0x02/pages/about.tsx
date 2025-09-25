@@ -1,10 +1,10 @@
 import Button from "@/components/common/Button";
-
-type Props = {};
+import Header from "@/components/layout/Header";
 
 const about = () => {
   return (
     <>
+      <Header />
       <div className="p-8 flex flex-col gap-4 items-center">
         <h1 className="text-3xl font-bold">About Page</h1>
 

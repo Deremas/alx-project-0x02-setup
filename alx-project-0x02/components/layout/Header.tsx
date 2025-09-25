@@ -5,7 +5,7 @@ const Header = (props: Props) => {
   return (
     <>
       <nav>
-        <ul>
+        <ul className="flex gap-4 p-4 bg-gray-700 justify-end">
           <li>
             <Link href="/home">Home</Link>
           </li>
@@ -17,7 +17,6 @@ const Header = (props: Props) => {
           </li>
         </ul>
       </nav>
-      <h1>Header</h1>
     </>
   );
 };

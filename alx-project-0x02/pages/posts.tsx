@@ -1,11 +1,15 @@
-import React from 'react'
+import Header from "@/components/layout/Header";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const posts = (props: Props) => {
   return (
-    <div>posts</div>
-  )
-}
+    <>
+      <Header />
+      <h1>Posts Page</h1>
+    </>
+  );
+};
 
-export default posts
+export default posts;
